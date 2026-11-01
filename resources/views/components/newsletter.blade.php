@@ -1,0 +1,2 @@
+@props(['locale'])
+<section id="newsletter" class="newsletter"><h2>{{ __('ui.newsletter') }}</h2><p>{{ __('ui.newsletter-copy') }}</p><form action="{{ route('subscribe',$locale) }}" method="POST">@csrf<label class="sr-only" for="newsletter-email">{{ __('ui.email') }}</label><input id="newsletter-email" name="email" type="email" required maxlength="254" placeholder="{{ __('ui.email') }}"><label class="consent"><input type="checkbox" name="consent" value="1" required> {{ __('ui.consent') }}</label><button class="red-button">{{ __('ui.subscribe') }} →</button></form></section>
