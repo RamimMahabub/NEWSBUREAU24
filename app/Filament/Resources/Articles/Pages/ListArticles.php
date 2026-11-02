@@ -5,8 +5,8 @@ namespace App\Filament\Resources\Articles\Pages;
 use App\Filament\Resources\Articles\ArticleResource;
 use App\Models\Article;
 use Filament\Actions\CreateAction;
-use Filament\Resources\Components\Tab;
 use Filament\Resources\Pages\ListRecords;
+use Filament\Schemas\Components\Tabs\Tab;
 use Illuminate\Database\Eloquent\Builder;
 
 class ListArticles extends ListRecords
